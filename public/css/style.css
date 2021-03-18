@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*css reset meyerweb*/
+
+*,*:before,*:after{
+    box-sizing: border-box;
+    outline: none;/*按鈕不會出現選取框*/
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	font-size: 20px;
+    font-family: Arial;
+    letter-spacing: -0.5px;
+}
+
+/*css reset*/
+.head{
+    height: 70px;
+    background-color: #C4E1FF;
+    line-height: 70px;
+    text-align: center;
+}
+.head h2{
+    font-size: 135%;
+    font-weight: bold;
+    color: #004B97;
+}
+
+.content{
+    margin-top: 15px;
+}
+
+.signin{
+    border: 1px solid #D2E9FF;
+    border-radius: 15px;
+    width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #004B97;
+}
+.signin h3{
+    margin:15px 0;
+    font-weight: bold;
+}
+
+.signin p{
+    text-align: center;
+}
+.signin input{
+    height: 30px;
+    width: 230px;
+    margin: 0 5px 5px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #2894FF;
+    font-size: 90%;
+    text-indent: 5px;
+}
+
+.signin input:focus{
+    border: 2px solid #84C1FF;
+    border-radius: 5px;
+}
+
+.signin .submit{
+    width: 300px;
+    height: 35px;
+    margin: 5px 0 15px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #84C1FF;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.signin .submit:hover{
+    background-color:#2894FF;
+    cursor: pointer
+}
+
+/*已登入、登出*/
+.status{
+    height: 70px;
+    text-align: center;
+    line-height: 62px;
+}
+.status .success{
+	font-size: 16px;
+    font-weight: bold;
+    color: green;
+}
+
+.signin a{
+    display: block;
+    width: 300px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    margin: 5px 0 15px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #84C1FF;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.signin a:hover{
+    background-color:#2894FF;
+    color: #fff;
+}
+
+/*登入失敗*/
+.status .error{
+	font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+
+.signin .backhome{
+    display: block;
+    width: 300px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    margin: 5px 0 15px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #aaa;
+    color: #555;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.signin .backhome:hover{
+    cursor: pointer
+}
+.signin .backhome:hover>#reciprocal{
+    background-color: #2894FF;
+    color: #fff;
+}
+
+#reciprocal{
+    pointer-events: none;
+    background-color: #aaa;
+    border: none;
+    width: 20px;
+    color: #555;
+    font-size: 15px;
+}
